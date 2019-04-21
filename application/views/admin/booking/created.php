@@ -27,6 +27,10 @@
         	<button class="btn btn-primary" style="float: right">Xac Nhan</button>
         </div>
 	</form>
+	<div>
+		<button class="shownoidung">Show noj dung</button>
+		<div class="noidung">aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa </div>
+	</div>
 </div>
 <script>
 	$(function () {
@@ -37,6 +41,10 @@
 		      language: 'vi',
 		      datesDisabled:$('#date_disabled').val()
 		});
-		
+$('.noidung').slideUp();
+		$('.shownoidung').click(function(){
+			$('.noidung').slideToggle();
+			console.log(1);
+		});
 	});
 </script>
